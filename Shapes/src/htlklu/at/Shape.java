@@ -18,4 +18,10 @@ public abstract class Shape {
 	public abstract double getArea();
 
 	public abstract double getCircumference();
+
+	@Override
+	public String toString() {
+		return getClass().getSimpleName() + "id:" + getId() + "Area:" + getArea() + "Circumference:" + getCircumference();
+	}
+
 }

@@ -36,4 +36,9 @@ public class Rectangle extends Shape {
 	public void setHeight(double height) {
 		this.height = height;
 	}
+
+	@Override
+	public String toString() {
+		return super.toString() + "size: [" + getWidth() + "/" + getHeight() + "]";
+	}
 }
