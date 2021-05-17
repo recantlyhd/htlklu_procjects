@@ -41,4 +41,5 @@ public class Rectangle extends Shape {
 	public String toString() {
 		return super.toString() + "size: [" + getWidth() + "/" + getHeight() + "]";
 	}
+
 }
