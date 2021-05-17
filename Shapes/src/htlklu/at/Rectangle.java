@@ -44,5 +44,11 @@ public class Rectangle extends Shape {
 		return super.toString() + " size: [" + getWidth() + "/" + getHeight() + "]";
 	}
 
+	@Override
+	public void paint(Graphics g) {
+		// TODO Auto-generated method stub
+		
+	}
+
 
 }

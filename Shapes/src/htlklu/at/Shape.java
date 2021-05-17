@@ -36,9 +36,5 @@ public abstract class Shape extends PaintableThing implements Comparable<Shape>{
 		}
 		return compareresult;
 	}
-	@Override
-	public void paint(Graphics g) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 }
