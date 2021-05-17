@@ -1,5 +1,7 @@
 package htlklu.at;
 
+import java.awt.Graphics;
+
 public class Rectangle extends Shape {
 
 	private double width, height;
@@ -39,7 +41,8 @@ public class Rectangle extends Shape {
 
 	@Override
 	public String toString() {
-		return super.toString() + "size: [" + getWidth() + "/" + getHeight() + "]";
+		return super.toString() + " size: [" + getWidth() + "/" + getHeight() + "]";
 	}
+
 
 }

@@ -1,6 +1,8 @@
 package htlklu.at;
 
-public abstract class Shape implements Comparable<Shape> {
+import java.awt.Graphics;
+
+public abstract class Shape extends PaintableThing implements Comparable<Shape>{
 
 	private int id;
 	private static int lastId = 0;
@@ -21,7 +23,7 @@ public abstract class Shape implements Comparable<Shape> {
 
 	@Override
 	public String toString() {
-		return getClass().getSimpleName() + "id:" + getId() + "Area:" + getArea() + "Circumference:"
+		return getClass().getSimpleName() + " id:" + getId() + " Area:" + getArea() + " Circumference:"
 				+ getCircumference();
 	}
 
@@ -33,5 +35,10 @@ public abstract class Shape implements Comparable<Shape> {
 			return Double.compare(this.getCircumference(), o.getCircumference());
 		}
 		return compareresult;
+	}
+	@Override
+	public void paint(Graphics g) {
+		// TODO Auto-generated method stub
+		
 	}
 }
